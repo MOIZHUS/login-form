@@ -1,13 +1,11 @@
 package com.example.project_android.Entity;
 
-
-
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserEntity{
+public class UserEntity {
 
     @SerializedName("page")
     public Integer page;
@@ -25,29 +23,30 @@ public class UserEntity{
         @SerializedName("id")
         public Integer id;
         @SerializedName("first_name")
-        public String first_name;
+        public String firstName;
         @SerializedName("last_name")
-        public String last_name;
+        public String lastName;
         @SerializedName("avatar")
         public String avatar;
 
-        public String getfstname(){
-            return this.first_name;
-        }
-        public String getlstname(){
-            return this.last_name;
-        }
-        public int getuser_id(){
-            return this.id;
+        public String getFirstName() {
+            return firstName;
         }
 
-        public String getImageUrl() {
-            return this.avatar;
+        public String getLastName() {
+            return lastName;
         }
 
+        public Integer getId() {
+            return id;
+        }
+
+        public String getAvatar() {
+            return avatar;
+        }
     }
-    public List<UserEntity.Datum> getData() {
+
+    public List<Datum> getData() {
         return data;
     }
-
 }

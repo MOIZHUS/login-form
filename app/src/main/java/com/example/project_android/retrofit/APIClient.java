@@ -15,7 +15,7 @@ public class APIClient {
                 .addInterceptor(httpLoggingInterceptor)
                 .build();
         retrofit=new Retrofit.Builder()
-                .baseUrl("https://reqres.in")
+                .baseUrl("https://reqres.in/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         return retrofit;

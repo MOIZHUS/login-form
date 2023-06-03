@@ -45,9 +45,9 @@ public class MylistuserRecyclerViewAdapter extends RecyclerView.Adapter<Mylistus
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         UserEntity.Datum user = userList.get(position);
-        holder.fstname.setText(user.getfstname());
-        holder.lstname.setText(user.getlstname());
-        holder.user_id.setText(user.getuser_id());
+        holder.fstname.setText(user.getFirstName());
+        holder.lstname.setText(user.getLastName());
+        holder.user_id.setText(user.getId());
         // Load user image into the ImageView using a library like Picasso or Glide
 //        Picasso.get.load(user.getImageUrl()).into(holder.imgs);
 //        holder.mItem = mValues.get(position);
